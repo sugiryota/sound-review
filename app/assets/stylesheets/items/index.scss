@@ -79,20 +79,7 @@ video{
   height: 33vh;
 }
 
-.sold-out {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
-}
 
-.sold-out>span {
-  color: #FFF;
-  font-size: 45px;
-  font: bold;
-}
 
 
 .item-info {
@@ -115,7 +102,7 @@ video{
 
 
 
-.purchase-btn {
+.item-btn {
   width: 130px;
   background: rgb(87, 89, 109);
   text-align: center;
@@ -127,7 +114,7 @@ video{
   text-decoration: none;
 }
 
-.purchase-btn-text {
+.item-btn-text {
   color: #fff;
   display: block;
   font-size: 18px;
@@ -135,6 +122,6 @@ video{
   margin-bottom: 5px;
 }
 
-.purchase-btn-icon {
+.item-btn-icon {
   width: 60%;
 }

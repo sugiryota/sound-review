@@ -25,7 +25,7 @@
 | text                | text        | null: false     |
 | sound               | string      | null: false     |
 | category_id         | integer     | null: false     |
-| url                 | integer     | null: false     | 
+| url                 | string      | null: false     | 
 | user                | references  |foreign_key:true |
 
 ### Association
