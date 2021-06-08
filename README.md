@@ -22,10 +22,10 @@
 | Column              | Type        | Options         |
 | ------------------- | ----------- | --------------- |
 | name                | string      | null: false     | 
-| text                | text        | null: false     |
-| sound               | string      | null: false     |
+| text                | text        |                 |
+| audio               | string      | null: false     |
 | category_id         | integer     | null: false     |
-| url                 | string      | null: false     | 
+| url                 | string      |                 | 
 | user                | references  |foreign_key:true |
 
 ### Association
