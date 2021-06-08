@@ -24,6 +24,33 @@
           <div class="subtitle" >
             new reviews
           </div>
+          <ul class='item-lists'>
+      
+            <%@items.each do |item|%>
+            <li class='list'>
+              <%= link_to "#",class:"link" do %>
+              <div class='item-img-content'>
+                
+                <%if item.image.attached? %>
+                  <%= image_tag item.image, class: "item-img"  %>
+                <%else%>
+                  <%= image_tag 'soundreview2.png', class: "item-img"  %>
+                <%end%>  
+              </div>
+              <div class='item-info'>
+                
+                <%= item.name%>
+                
+              </div>
+              <audio src= "<%= "#{item.audio}" %>" controls="">
+                  
+              </audio>
+              
+              <% end %>
+            </li>
+            <%end%>
+          </ul>
+          
           
         </div> 
           

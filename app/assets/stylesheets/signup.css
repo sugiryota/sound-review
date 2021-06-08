@@ -21,7 +21,7 @@
   font-size:3vw;
 }
 .field{
-  font-size: 2vw;
+  font-size: 1.4vw;
   margin-bottom:6px;
 }
 .new-form{
@@ -41,8 +41,9 @@
 }
 .right-message{
   position: absolute;
-  top:25vh;
-  left:25vw;
+  top:30vh;
+  left:40vw;
   color:red;
+  font-size: 14px;
 
 }

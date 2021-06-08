@@ -7,7 +7,17 @@
       
     </div>    
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-      
+      <div class="field">
+        <div class="weight-bold-text">
+          Topimage
+        </div>
+        <div class="click-upload">
+          <p>
+            file is upload by click
+          </p>
+          <%= f.file_field :image, id:"item-image" %>
+        </div>
+      </div>
 
       <div class="field">
         <%= f.label :nickname %><br />

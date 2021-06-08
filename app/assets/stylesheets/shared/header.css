@@ -61,3 +61,13 @@
   margin-top:2vh;
   padding:5px;
 }
+.user-icon {
+  border-radius: 100px;
+  width:8vh;
+  margin-left:1vw;
+  margin-top:1vh;
+}
+.user_nav{
+  display:flex;
+}
+
