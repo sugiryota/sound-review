@@ -1,0 +1,37 @@
+    <%=render "shared/header"%>
+    <div class='main'>
+        <div class="categories">
+          <h1>Category</h1>
+          <div class="category">
+            <div class="category-name">映画</div>
+          </div>  
+          <div class="category">
+            <div class="category-name">音楽</div>
+          </div>  
+          <div class="category">
+            <div class="category-name">アニメ</div>
+          </div>  
+          <div class="category">
+            <div class="category-name">書籍</div>
+          </div>  
+          <div class="category">
+            <div class="category-name">その他</div>
+          </div>  
+        </div>
+        <video autoplay muted playsinline src="/assets/videos/sound1.mp4",playsinline autoplay loop ></video> 
+        <div class='item-contents'>
+          <h2 class='title'>Pick Up</h2>
+          <div class="subtitle" >
+            new reviews
+          </div>
+          
+        </div> 
+          
+    </div>
+      
+    <%= link_to "#", class: 'purchase-btn' do %>
+      <span class='purchase-btn-text'>Post　Review</span>
+      <%= image_tag 'icon_camera.png' , size: '79x50' ,class: "purchase-btn-icon" %>
+    <% end %> 
+    <%= render "shared/footer" %>
+    

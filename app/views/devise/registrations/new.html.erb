@@ -1,0 +1,45 @@
+<div class="contents row">
+  <div class="container">
+    
+    <div class="form-header">
+        <h2>Sign up</h2>
+      
+    </div>    
+    <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      
+
+      <div class="field">
+        <%= f.label :nickname %><br />
+        <%= f.text_area :nickname,class:'new-form', autofocus: true  %>
+      </div>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email,class:'new-form' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off",class:'new-form' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off",class:'new-form' %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up",class:"log"  %>
+      </div>
+    <% end %>
+  </div>
+  <div class="right-message">
+    <div class="sign"> 
+      <%= render 'shared/error_messages', model: @user %>
+    </div>
+  </div>    
+  <video autoplay muted playsinline src="/assets/videos/sign.mp4", autoplay loop ></video> 
+</div>
