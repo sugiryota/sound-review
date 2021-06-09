@@ -1,17 +1,12 @@
 <div class="items-sell-contents">
   <header class="items-sell-header">
-    <%= link_to image_tag('soundreview2.png' , size: '185x50'), "/" %>
+    <%= link_to image_tag('soundreview.png' , size: '185x50'), "/" %>
 
   </header>
   <div class="items-sell-main">
     <h2 class="items-sell-title">レビューの情報を入力</h2>
     <%= form_with model:@item, local: true do |f| %>
 
-    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
-    <%# render 'shared/error_messages', model: f.object %>
-    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
-
-    <%# 商品画像 %>
     <div class="items-detail">
       <div class="weight-bold-text">
       カテゴリー
@@ -36,10 +31,10 @@
     </div>
     <div class="new-items">
       <div class="weight-bold-text">
-        作品名
+        作品名<span class="counter">(40文字まで)</span>
         <span class="indispensable">*必須</span>
       </div>
-      <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"作品名（40文字まで)", maxlength:"40" %>
+      <%= f.text_area :name, class:"items-text", id:"item-name" %>
     </div>  
     <div class="sound-upload">
       <div class="weight-bold-text">
@@ -82,7 +77,7 @@
       <li><a href="#">newreview利用規約</a></li>
       <li><a href="#">特定商取引に関する表記</a></li>
     </ul>
-    <%= link_to image_tag('soundreview2.png' , size: '185x50'), "/" %>
+    <%= link_to image_tag('soundreview.png' , size: '185x50'), "/" %>
     <p class="inc">
       ©︎NewReview,Inc.
     </p>
