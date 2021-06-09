@@ -9,12 +9,9 @@ class Item < ApplicationRecord
     validates :name
     validates :category_id
     validates :audio
-
   end
 
-  validates :category_id,numericality: { other_than: 1 }
+  validates :category_id, numericality: { other_than: 1 }
 
   mount_uploader :audio, AudioUploader
-
-  
 end
