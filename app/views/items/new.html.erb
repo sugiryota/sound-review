@@ -3,8 +3,12 @@
     <%= link_to image_tag('soundreview.png' , size: '185x50'), "/" %>
 
   </header>
+
   <div class="items-sell-main">
     <h2 class="items-sell-title">レビューの情報を入力</h2>
+
+    <%= render 'shared/error_messages', model: @item %>
+    
     <%= form_with model:@item, local: true do |f| %>
 
     <div class="items-detail">

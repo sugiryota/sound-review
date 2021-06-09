@@ -54,10 +54,10 @@
         <%if current_user.id==@item.user_id %>
         <div class="edit-btn">
           <div class="edit">
-            <%= link_to "レビューの編集", "#", method: :get, class: "item-red-btn" %>
+            <%= link_to "レビューの編集", edit_item_path, method: :get, class: "item-red-btn" %>
           </div>  
           <div class="delete">
-            <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
+            <%= link_to "削除", item_path, method: :delete, class:"item-destroy" %>
           </div>
         </div>  
         <%end%>
