@@ -1,0 +1,741 @@
+/* line 1, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.main {
+  width: 100vw;
+  position: relative;
+}
+
+/* line 10, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+video {
+  width: 100%;
+}
+
+/* line 15, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.categories {
+  position: absolute;
+  left: 10vh;
+  top: 3vh;
+  z-index: 1;
+}
+
+/* line 22, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.category {
+  font-family: serif;
+  color: white;
+  font-size: 4vw;
+  cursor: pointer;
+}
+
+/* line 28, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.categories h1 {
+  font-family: serif;
+  color: white;
+  font-size: 5vw;
+}
+
+/* line 34, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-name {
+  color: black;
+}
+
+/* line 37, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+/* line 45, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-contents > .title {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+/* line 51, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-contents > .subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* line 59, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 66, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-lists > .list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+/* line 75, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+/* line 88, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-btn {
+  width: 130px;
+  background: rgba(87, 89, 109, 0.5);
+  text-align: center;
+  border-radius: 10%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* line 100, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-btn-text {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+/* line 108, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-btn-icon {
+  width: 60%;
+}
+
+/* line 120, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 127, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-lists > .list {
+  width: 35%;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+/* line 133, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.link {
+  text-decoration: none;
+}
+
+/* line 138, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-img-content {
+  position: relative;
+}
+
+/* line 142, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+/* line 148, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.item-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+  font-size: 3vh;
+}
+
+/* line 157, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+audio {
+  width: 33vw;
+  padding: 10px;
+}
+
+/* line 163, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.star-btn {
+  display: flex;
+  align-items: center;
+}
+
+/* line 168, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.star-icon {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 0.5vw;
+}
+
+/* line 174, /Users/sugi/Desktop/project/sound-review/app/assets/stylesheets/items/index.scss */
+.star-count {
+  font-size: 2vh;
+}
+
+
+
+.items-sell-contents {
+  background-color:  rgb(156, 206, 221);
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.items-sell-header {
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.items-sell-main {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 450px;
+  padding: 10vh 15vw;
+}
+
+.items-sell-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.indispensable {
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 3px;
+  color: #ea352d;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.weight-bold-text {
+  font-weight: bold;
+  min-width: 170px;
+  margin-bottom: 10px;
+}
+.counter{
+  font-size:1.5vw;
+}
+
+.select-box {
+  height: 30px;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+}
+
+
+
+.img-upload {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.click-upload {
+  margin: 15px 0;
+  min-width: 250px;
+}
+
+.click-upload>p {
+  margin-bottom: 15px;
+  font-size:1.5vw;
+}
+
+
+.new-items {
+  padding: 2vh 0;
+}
+
+.items-text {
+  width: 100%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+
+
+.items-detail {
+  
+  padding: 2vh 0;
+}
+
+.items-detail>.form {
+  width: 200px;
+  padding: 2vh 0;
+}
+
+.select-box {
+  margin: 2vh 0;
+}
+.item-name{
+  width:100vh;
+}
+.url{
+  width:100%;
+}
+
+
+.sell-btn-contents {
+  width:100%;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sell-btn {
+  background: #f85408;
+  border: 1px solid #f85408;
+  color: #fff;
+  width: 53%;
+  height: 50px;
+  font-size: 14px;
+  margin: 4vh 0;
+  border-radius: 30px;
+}
+
+.back-btn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 20%;
+  text-decoration: none;
+  border-radius: 30px;
+  
+}
+
+
+
+.items-sell-footer {
+  background-color:  rgb(156, 206, 221);
+  width: 60vw;
+  padding: 3ch 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+}
+
+
+.items-sell-footer>.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3vh 0;
+}
+
+.menu>li>a {
+  color:white;
+  font-size: 12px;
+  margin: 2vw;
+  text-decoration: none;
+}
+
+.inc {
+  font-size: 13px;
+}
+div.field_with_errors {
+  background-color: rgb(224, 21, 21);
+  padding:2px;
+}
+
+.item-show {
+  
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+.item-box {
+  background-color: #FFF;
+  width:90vw;
+  
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-content{
+  display: flex;
+}
+.item-user{
+  display:flex;
+}
+.item-profile{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-box>.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.item-box-img {
+  height: 50vh;
+  width: 40vw;
+  object-fit: contain;
+}
+
+.item-price-box {
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-price-box>.item-price {
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.item-price-box>.item-postage {
+  font-size: 16px;
+}
+
+.edit-btn{
+  display:flex;
+
+}
+.item-red-btn {
+  text-align: center;
+  background-color: orange;
+  font-size: 8px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 2vh 3vw;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.item-destroy {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 8px;
+  color: white;
+  margin: 20px 0px;
+  padding: 2vh 6vw;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.item-explain-box {
+  font-size: 18px;
+  margin: 40px 0px;
+  overflow-wrap: anywhere;
+}
+
+.detail-table {
+  margin-bottom: 30px;
+  width: 110%;
+}
+tr{
+  display: flex;
+  flex-direction: column;
+}
+th{
+  color:white;
+}
+
+.detail-item {
+  width: 100%;
+  height:10vh;
+  line-height: 10vh;
+  background-color: rgb(105, 168, 228);
+  border: 1px solid #dedede;
+  font-size: 8px;
+  text-align: center;
+  
+}
+
+.detail-value {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  display:flex;
+}
+.item-user-name{
+  margin:11px 0 0 10px;
+
+}
+.detail-text{
+  height:25vh;
+  overflow: scroll;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+
+
+
+
+.comment-box {
+  width: 40vw;
+  background-color: #fff;
+  margin: 5vh 0;
+  text-align: center;
+}
+
+.comment-text {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: solid 2px #dedede;
+  resize: none;
+}
+
+.comment-btn {
+  line-height: 48px;
+  background-color: rgb(105, 168, 228);
+  border: 1px solid rgb(105, 168, 228);
+  color: #fff;
+  width: 50%;
+  font-size: 13px;
+  border-radius: 100px;
+  
+}
+
+
+
+.comment-flag-icon {
+  margin: 10px 5px 0 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+
+}
+
+.change-item-btn {
+  font-size: 30px;
+  text-decoration: none;
+  color: #3CCACE;
+}
+
+.another-item {
+  display: block;
+  margin: 30px 0px 8px;
+  color: rgb(105, 168, 228);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+
+.footer{
+  width:100vw;
+  color:aliceblue;
+  background-color: rgb(156, 206, 221);
+  text-align:center;
+}
+.footer-contents{
+  display:flex;
+  justify-content: center;
+  margin-bottom:2vh;
+}
+.sound-details{
+  margin:0 4vw;
+
+}
+.footer-content-head{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer>p{
+  font-size: 1px;
+}
+.foot-icon{
+  width:20vw;
+  margin:0 auto;
+
+}
+li{
+  list-style: none;
+}
+.footer-link{
+  text-decoration: none;
+  color:white;
+  font-size:1.5vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+.top-page-header{
+  width:100vw;
+  height:23vh;
+  padding:2vh 10vw;
+  background-color: rgb(156, 206, 221);
+  display:flex;
+  justify-content: space-between;
+  
+}
+.search-bar-contents{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  width:60vw;
+}
+.top-icon{
+  width:20vw;
+  margin-right:10vw;
+}
+.search-form{
+  width:65vw;
+  height:5vh;
+  display:flex;
+  margin-bottom:5px;
+}
+.search-form>.input-box {
+  width: 100%;
+  height: 5vh;
+  padding-left: 10px;
+  
+}
+.search-button {
+  width: 5vw;
+  height:5vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #ff9b00;
+}
+.search-icon {
+  width: 80%;
+}
+
+.lists-right{
+  margin-top:0.2vh;
+  
+  font-size:1.7vw;
+}
+.grid-6{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post{
+  color:white;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top:2vh;
+  padding:5px;
+}
+.user-icon {
+  border-radius: 100px;
+  width:8vh;
+  height:8vh;
+  margin-left:1vw;
+  margin-top:1vh;
+}
+.user_nav{
+  display:flex;
+}
+
+.second-fotter{
+  width:100vw;
+  text-align:center;
+  font-size:1vw;
+  background-color: rgb(156, 206, 221);
+  padding:2px;
+  color:white;
+}
+.second-header{
+  width:100vw;
+  background-color: rgb(156, 206, 221);
+}
+* {
+  box-sizing: border-box;
+}
+.contents{
+    width:100vw;
+    height:auto;
+    position:relative; 
+    background-color: rgb(156, 206, 221);
+}
+
+.container{
+  
+  right:auto;
+  color:white;
+  text-align:center;
+  width:300px;
+  position:absolute;
+  z-index:1;
+}
+.container h2{
+  font-size:3vw;
+}
+.field{
+  font-size: 1.4vw;
+  margin-bottom:6px;
+}
+.new-form{
+  width:14vw;
+  height:4vh;
+}
+
+.log{
+  height:6vh;
+  width:15vw;
+  background-color:GREY;
+  color:white;
+  font-size:2vw;
+}
+.actions{
+  margin-top:1vh;
+}
+.right-message{
+  position: absolute;
+  top:30vh;
+  left:40vw;
+  color:red;
+  font-size: 14px;
+
+}
+.field{
+  margin:15px 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
